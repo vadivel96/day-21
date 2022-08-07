@@ -9,16 +9,29 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <style>
         .background{
+            
             background-image: url('forex-image.jpg');
             background-size: cover;
             background-repeat:no-repeat;
             width: 1500px;
             height:800px;
+            
         }
         .container{
             height: 300px;
             width: 300px;
         }
+       .new{
+        display:flex;
+        position: relative;
+        flex-direction:row;
+        justify-content:left ;
+            
+            
+       }
+       .card{
+        margin-left: 10rem;
+       }
        
     </style>
 </head>
@@ -28,26 +41,31 @@
         <div class="container  text-center ">
             
         </div>
-       
-        <form class="row form-check  g-3 justify-content-center" onsubmit="output()">
-            
-            <div class="col-md-6  ms-5 w-25 ">
-             
-              <input type="text" class="form-control " id="typeCountry1" placeholder="type country">
-            </div>
-       
-            
-            <div class="col-md-6 ms-5">
-                <button type="submit" class="btn btn-primary mb-3" >Convert</button>
-              </div>
-      
-       
-            <div class="col-md-6 ms-5 w-25">
+       <div class="new">
+        <div>
+          <form class="row form-check ms-5 g-3 " onsubmit="output(event)">
               
-              <input type="text" class="form-control" id="typeCountry2" placeholder="type country">
-            </div>
-           
-          </form>
+              <div class="col-md-6   w-100 ">
+               
+                <input type="text" class="form-control " id="typeCountry1" placeholder="type country">
+              </div>
+         
+              
+              <div class="col-md-6 ">
+                  <button type="submit" class="btn btn-primary mb-3" >Convert</button>
+                </div>
+        
+         
+              <div class="col-md-6  w-100">
+                
+                <input type="text" class="form-control" id="typeCountry2" placeholder="type country">
+              </div>
+             
+            </form>
+        </div>
+  
+            
+        </div>
          
 
     </div>
